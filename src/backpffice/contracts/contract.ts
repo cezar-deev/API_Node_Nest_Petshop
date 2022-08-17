@@ -1,5 +1,5 @@
 
 export interface Contract {
-    errors :[]
+    errors :any[]
     validate (model:any): boolean
 }

@@ -6,7 +6,7 @@ import { Contract } from "./contract";
 @Injectable()
 export class CreateCustomerContract implements Contract {
     
-    errors;
+    errors: any[];
 
     validate(model: Customer): boolean {
 
@@ -19,7 +19,6 @@ export class CreateCustomerContract implements Contract {
     
        this.errors = flunt.errors
        return flunt.isValid();
-       //throw new Error("Method not implemented.");
     }
 
 }
